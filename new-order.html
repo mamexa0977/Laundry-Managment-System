@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Order -  Laundry</title>
+</head>
+<body>
+
+  <header>
+    <h1> Laundry</h1>
+    <p>Laundry Management and Delivery System</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="shop-dashboard.html">Dashboard</a></li>
+      <li><a href="new-order.html">New Order</a></li>
+      <li><a href="search-order.html">Search Order</a></li>
+      <li><a href="login.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>New Order</h2>
+
+    <form action="receipt.html" method="get">
+
+      <div>
+        <h3>Customer details</h3>
+        <p>
+          <label for="customer_name">Customer name</label>
+          <input type="text" id="customer_name" name="customer_name" required>
+        </p>
+        <p>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" maxlength="10" pattern="09[0-9]{8}" title="Phone number: 10 digits starting with 09" placeholder="0911000001" required>
+        </p>
+      </div>
+      <div>
+        <h3>Clothes</h3>
+        <table border="1">
+          <caption>Services and quantities</caption>
+          <thead>
+            <tr>
+              <th scope="col">Service</th>
+              <th scope="col">Unit price</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><label for="qty_shirt">Shirt</label></td>
+              <td>ETB 40</td>
+              <td><input type="number" id="qty_shirt" name="qty_shirt" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="qty_trouser">Trouser</label></td>
+              <td>ETB 60</td>
+              <td><input type="number" id="qty_trouser" name="qty_trouser" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="qty_dress">Dress</label></td>
+              <td>ETB 80</td>
+              <td><input type="number" id="qty_dress" name="qty_dress" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="qty_suit">Suit</label></td>
+              <td>ETB 250</td>
+              <td><input type="number" id="qty_suit" name="qty_suit" min="0" value="0"></td>
+            </tr>
+            <tr>
+              <td><label for="qty_blanket">Blanket</label></td>
+              <td>ETB 150</td>
+              <td><input type="number" id="qty_blanket" name="qty_blanket" min="0" value="0"></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Total price: ETB 0 (the system will calculate it in a later phase)</p>
+      </div>
+
+      <div>
+        <h3>Delivery (optional)</h3>
+        <p>
+          <input type="checkbox" id="delivery_requested" name="delivery_requested">
+          <label for="delivery_requested">Customer wants delivery (additional fee: ETB 100)</label>
+        </p>
+        <p>
+          <label for="delivery_address">Delivery address</label><br>
+          <textarea id="delivery_address" name="delivery_address" rows="3" cols="40"></textarea>
+        </p>
+      </div>
+
+      <div>
+        <h3>Estimated ready date</h3>
+        <p>
+          <label for="estimated_ready_date">Estimated ready date</label>
+          <input type="date" id="estimated_ready_date" name="estimated_ready_date">
+        </p>
+      </div>
+
+      <p>
+        <button type="submit">Confirm Order</button>
+        <button type="reset">Clear form</button>
+        <a href="shop-dashboard.html">Cancel</a>
+      </p>
+      <p>If a service is not in the list, ask the owner to add it on the Prices page.</p>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>laundry system</p>
+  </footer>
+
+</body>
+</html>
