@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update job - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Mulugeta Tesfaye (Driver)</p>
+  </header>
+
+  <nav>
+    <p><a href="../driver/dashboard.html">My jobs</a> | <a href="../driver/available-jobs.html">Available jobs</a> | <a href="../driver/history.html">History and earnings</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Update job JOB-0001</h2>
+<p>Delivery of ORD-0006 from Bereket Laundry to Meron Haile.</p>
+<form action="../driver/dashboard.html" method="get">
+<fieldset>
+<legend>Job state</legend>
+<p><label for="job_state">New state</label><br>
+<select id="job_state" name="job_state" required>
+<option value="Picked up from laundry">Picked up from laundry</option>
+<option value="On the way">On the way</option>
+<option value="Delivered">Delivered</option>
+<option value="Customer not available">Customer not available</option>
+</select></p>
+</fieldset>
+<fieldset>
+<legend>Money collected (delivery jobs only)</legend>
+<p><label for="payment_method">Payment method</label><br>
+<select id="payment_method" name="payment_method">
+<option value="">-- select --</option>
+<option value="Cash">Cash</option>
+<option value="Telebirr">Telebirr</option>
+</select></p>
+<p><label for="amount_collected">Amount collected (ETB)</label><br>
+<input type="number" id="amount_collected" name="amount_collected" min="0"></p>
+<p><small>The full amount is ETB 360. If the customer pays less, the system records a partial payment.</small></p>
+</fieldset>
+<fieldset>
+<legend>Note</legend>
+<p><label for="job_note">Note for the laundry (optional)</label><br>
+<textarea id="job_note" name="job_note" rows="3" cols="40"></textarea></p>
+</fieldset>
+<button type="submit">Save job</button>
+ 
+<a href="../driver/job-details.html">Cancel</a>
+</form>
+<p><small>If the customer is not available, the job goes back to the job board so a driver can try again.</small></p>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

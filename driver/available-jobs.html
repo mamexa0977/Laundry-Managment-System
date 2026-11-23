@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available jobs - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Mulugeta Tesfaye (Driver)</p>
+  </header>
+
+  <nav>
+    <p><a href="../driver/dashboard.html">My jobs</a> | <strong>Available jobs</strong> | <a href="../driver/history.html">History and earnings</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Available jobs</h2>
+<p>These jobs come from all laundries. The first driver who accepts a job gets it.</p>
+<section>
+<form action="../driver/available-jobs.html" method="get">
+<p><label for="job_area">Laundry area</label><br>
+<select id="job_area" name="job_area">
+<option value="All areas">All areas</option>
+<option value="Bole">Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+</select></p>
+<p><label for="job_type">Job type</label><br>
+<select id="job_type" name="job_type">
+<option value="All types">All types</option>
+<option value="Pickup">Pickup</option>
+<option value="Delivery">Delivery</option>
+</select></p>
+<button type="submit">Filter</button>
+</form>
+</section>
+<hr>
+<section>
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>2 jobs waiting for a driver</caption>
+<thead>
+<tr><th scope="col">Job</th><th scope="col">Type</th><th scope="col">Laundry</th><th scope="col">From</th><th scope="col">To</th><th scope="col">When</th><th scope="col">You earn</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>JOB-0003</td><td>Pickup</td><td>Bereket Laundry (Bole)</td><td>Abebe Kebede, Bole Medhanialem, near Edna Mall, House 215</td><td>Bereket Laundry, Bole</td><td>2026-11-18, morning</td><td>ETB 50</td><td><a href="../driver/dashboard.html">Accept job</a></td></tr>
+<tr><td>JOB-0004</td><td>Delivery</td><td>Sheba Clean (Piassa)</td><td>Sheba Clean, Piassa, behind Cinema Ethiopia</td><td>Betty Lemma, Kazanchis, near Ethio-Cuba Square</td><td>2026-11-18, afternoon</td><td>ETB 80</td><td><a href="../driver/dashboard.html">Accept job</a></td></tr>
+</tbody>
+</table>
+<p><small>You can accept jobs from different laundries on the same day. Use the filter to see jobs near you.</small></p>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
