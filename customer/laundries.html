@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundries - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Abebe Kebede (Customer)</p>
+  </header>
+
+  <nav>
+    <p><strong>Laundries</strong> | <a href="../customer/my-orders.html">My orders</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Choose a laundry</h2>
+<p>These laundries are approved and ready to take your clothes. Pick one to see its prices.</p>
+<section>
+<h3>Search</h3>
+<form action="../customer/laundries.html" method="get">
+<p><label for="search_name">Laundry name</label><br>
+<input type="text" id="search_name" name="search_name" placeholder="e.g. Bereket"></p>
+<p><label for="search_area">Area</label><br>
+<select id="search_area" name="search_area">
+<option value="All areas">All areas</option>
+<option value="Bole">Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+</select></p>
+<p><input type="checkbox" id="delivery_only" name="delivery_only" value="on"> <label for="delivery_only">Show only laundries that deliver</label></p>
+<button type="submit">Search</button>
+</form>
+</section>
+<hr>
+<p><small>Showing 3 laundries.</small></p>
+<section>
+<h3>Bereket Laundry</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Area</th><td>Bole, near Medhanialem Church</td></tr>
+<tr><th scope="row">Open</th><td>07:30 - 19:00</td></tr>
+<tr><th scope="row">Rating</th><td>4.6 / 5 (28 reviews)</td></tr>
+<tr><th scope="row">Delivery</th><td>Yes (pickup ETB 50, delivery ETB 100)</td></tr>
+</tbody>
+</table>
+<p>Family laundry with fast service for shirts, suits and blankets.</p>
+[ <a href="../customer/laundry-detail.html">View details and prices</a> ]
+</section>
+<hr>
+<section>
+<h3>Sheba Clean</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Area</th><td>Piassa, behind Cinema Ethiopia</td></tr>
+<tr><th scope="row">Open</th><td>08:00 - 20:00</td></tr>
+<tr><th scope="row">Rating</th><td>4.3 / 5 (19 reviews)</td></tr>
+<tr><th scope="row">Delivery</th><td>Yes (pickup ETB 40, delivery ETB 80)</td></tr>
+</tbody>
+</table>
+<p>Open late. Good for dresses and traditional clothes.</p>
+[ <a href="../customer/laundry-detail.html">View details and prices</a> ]
+</section>
+<hr>
+<section>
+<h3>Addis Fresh</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Area</th><td>CMC, Michael Area</td></tr>
+<tr><th scope="row">Open</th><td>08:00 - 18:00</td></tr>
+<tr><th scope="row">Rating</th><td>4.1 / 5 (11 reviews)</td></tr>
+<tr><th scope="row">Delivery</th><td>No, drop-off only</td></tr>
+</tbody>
+</table>
+<p>Low prices for big loads. You bring and collect your clothes.</p>
+[ <a href="../customer/laundry-detail.html">View details and prices</a> ]
+</section>
+<hr>
+<p><small>Sample page: all three links open the Bereket Laundry details.</small></p>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

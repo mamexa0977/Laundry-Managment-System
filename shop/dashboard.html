@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopkeeper dashboard - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Hirut Alemayehu (Shopkeeper) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><strong>Dashboard</strong> | <a href="../shop/new-order.html">New order</a> | <a href="../shop/search-order.html">Search order</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Shopkeeper dashboard</h2>
+<section>
+<h3>Quick actions</h3>
+[ <a href="../shop/new-order.html">New order</a> ]
+[ <a href="../shop/search-order.html">Search order</a> ]
+</section>
+<hr>
+<section>
+<h3>Pending orders by status</h3>
+<p>Total pending orders: <strong>5</strong></p>
+<h4>Ready for collection</h4><table border="1" cellpadding="6" cellspacing="0">
+<caption>Orders - Ready for collection</caption>
+<thead>
+<tr><th scope="col">Order number</th><th scope="col">Customer</th><th scope="col">Phone</th><th scope="col">Estimated ready</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0003</td><td>Dawit Alemu</td><td>0933000003</td><td>2026-11-18</td><td><a href="../shop/handover.html">Hand over</a></td></tr>
+<tr><td>ORD-0006</td><td>Meron Haile</td><td>0966000006</td><td>2026-11-18</td><td><a href="../shop/handover.html">Hand over</a></td></tr>
+</tbody>
+</table>
+<p><small>Inform these customers that their clothes are ready. ORD-0006 is a delivery order: its delivery job is already on the driver job board.</small></p>
+<h4>Finished</h4><table border="1" cellpadding="6" cellspacing="0">
+<caption>Orders - Finished</caption>
+<thead>
+<tr><th scope="col">Order number</th><th scope="col">Customer</th><th scope="col">Phone</th><th scope="col">Estimated ready</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0004</td><td>Hana Girma</td><td>0944000004</td><td>2026-11-18</td><td><a href="../shop/update-status.html?order=ORD-0004">Update status</a></td></tr>
+</tbody>
+</table>
+<h4>Washing</h4><table border="1" cellpadding="6" cellspacing="0">
+<caption>Orders - Washing</caption>
+<thead>
+<tr><th scope="col">Order number</th><th scope="col">Customer</th><th scope="col">Phone</th><th scope="col">Estimated ready</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0002</td><td>Sara Tesfaye</td><td>0922000002</td><td>2026-11-19</td><td><a href="../shop/update-status.html?order=ORD-0002">Update status</a></td></tr>
+</tbody>
+</table>
+<h4>Received</h4><table border="1" cellpadding="6" cellspacing="0">
+<caption>Orders - Received</caption>
+<thead>
+<tr><th scope="col">Order number</th><th scope="col">Customer</th><th scope="col">Phone</th><th scope="col">Estimated ready</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0001</td><td>Abebe Kebede</td><td>0911000001</td><td>2026-11-20</td><td><a href="../shop/update-status.html?order=ORD-0001">Update status</a></td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+<section>
+<h3>Online orders</h3>
+<p>Orders from the Laundry Hub customer list arrive here as <strong>received</strong> when the customer, or the driver who did the pickup, brings the clothes. The owner accepts the order first.</p>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
