@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Bereket Tadesse (Owner) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../owner/dashboard.html">Dashboard</a> | <a href="../owner/order-requests.html">Order requests</a> | <a href="../owner/deliveries.html">Deliveries</a> | <a href="../owner/prices.html">Prices</a> | <a href="../owner/staff.html">Staff</a> | <a href="../owner/laundry-profile.html">Laundry profile</a> | <strong>Reports</strong> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Reports</h2>
+<section>
+<h3>Choose report</h3>
+<form action="../owner/reports.html" method="get">
+<p><label for="report_type">Report</label><br>
+<select id="report_type" name="report_type" required>
+<option value="Orders report">Orders report</option>
+<option value="Income report">Income report</option>
+<option value="Unpaid orders">Unpaid orders</option>
+</select></p>
+<p><input type="radio" id="period_day" name="period_type" value="day" checked> <label for="period_day">Day</label></p>
+<p><input type="radio" id="period_month" name="period_type" value="month"> <label for="period_month">Month</label></p>
+<p><label for="report_date">Day</label><br>
+<input type="date" id="report_date" name="report_date"></p>
+<p><label for="report_month">Month</label><br>
+<input type="month" id="report_month" name="report_month"></p>
+<button type="submit">Show report</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Daily report - 2026-11-17</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr><th scope="col">Name</th><th scope="col">Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Orders received</td><td>1 (ORD-0001)</td></tr>
+<tr><td>Income</td><td>ETB 120 (ORD-0005, Cash)</td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+<section>
+<h3>Monthly report - November 2026</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr><th scope="col">Name</th><th scope="col">Value</th></tr>
+</thead>
+<tbody>
+<tr><td>Orders received</td><td>6</td></tr>
+<tr><td>Orders collected</td><td>1</td></tr>
+<tr><td>Total income</td><td>ETB 120</td></tr>
+<tr><td>Income by method</td><td>Cash ETB 120, Telebirr ETB 0, Bank transfer ETB 0</td></tr>
+<tr><td>Pickups and deliveries done</td><td>2</td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+<section>
+<h3>Unpaid orders</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr><th scope="col">Order</th><th scope="col">Customer</th><th scope="col">Total</th><th scope="col">Paid</th><th scope="col">Balance</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0001</td><td>Abebe Kebede</td><td>ETB 240</td><td>ETB 0</td><td>ETB 240</td></tr>
+<tr><td>ORD-0002</td><td>Sara Tesfaye</td><td>ETB 310</td><td>ETB 0</td><td>ETB 310</td></tr>
+<tr><td>ORD-0003</td><td>Dawit Alemu</td><td>ETB 200</td><td>ETB 0</td><td>ETB 200</td></tr>
+<tr><td>ORD-0004</td><td>Hana Girma</td><td>ETB 500</td><td>ETB 0</td><td>ETB 500</td></tr>
+<tr><td>ORD-0006</td><td>Meron Haile</td><td>ETB 260</td><td>ETB 0</td><td>ETB 260</td></tr>
+</tbody>
+<tfoot>
+<tr><th scope="row" colspan="4">Total balance</th><td>ETB 1510</td></tr>
+</tfoot>
+</table>
+</section>
+<hr>
+<section>
+<h3>If there is no data</h3>
+<p>No records found for this period.</p>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

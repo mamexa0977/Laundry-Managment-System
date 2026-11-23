@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order requests - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Bereket Tadesse (Owner) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../owner/dashboard.html">Dashboard</a> | <strong>Order requests</strong> | <a href="../owner/deliveries.html">Deliveries</a> | <a href="../owner/prices.html">Prices</a> | <a href="../owner/staff.html">Staff</a> | <a href="../owner/laundry-profile.html">Laundry profile</a> | <a href="../owner/reports.html">Reports</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Order requests from customers</h2>
+<p>New online orders wait here until you accept or reject them.</p>
+<section>
+<h3>Waiting for your answer</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>2 orders waiting</caption>
+<thead>
+<tr><th scope="col">Order</th><th scope="col">Customer</th><th scope="col">Clothes</th><th scope="col">Pickup</th><th scope="col">Delivery back</th><th scope="col">Total</th><th scope="col">Action</th></tr>
+</thead>
+<tbody>
+<tr><td>ORD-0008</td><td>Abebe Kebede (0911000001)</td><td>4 Shirt, 1 Blanket</td><td>Yes - Bole Medhanialem</td><td>Yes</td><td>ETB 460</td><td><a href="../owner/deliveries.html">Accept</a> | <a href="../owner/order-requests.html">Reject</a></td></tr>
+<tr><td>ORD-0010</td><td>Rahel Mulu (0977000010)</td><td>3 Trouser</td><td>No - brings them</td><td>No</td><td>ETB 180</td><td><a href="../owner/order-requests.html">Accept</a> | <a href="../owner/order-requests.html">Reject</a></td></tr>
+</tbody>
+</table>
+<p><small>Accepting an order with pickup posts a pickup job to the driver job board. Rejecting an order tells the customer it was rejected.</small></p>
+</section>
+<hr>
+<section>
+<h3>Reject reason (when you reject)</h3>
+<form action="../owner/order-requests.html" method="get">
+<p><label for="reject_order">Order number</label><br>
+<input type="text" id="reject_order" name="reject_order" placeholder="ORD-0010"></p>
+<p><label for="reject_reason">Reason</label><br>
+<select id="reject_reason" name="reject_reason">
+<option value="Too many orders today">Too many orders today</option>
+<option value="Service not available">Service not available</option>
+<option value="Address too far">Address too far</option>
+<option value="Other">Other</option>
+</select></p>
+<button type="submit">Reject order</button>
+</form>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

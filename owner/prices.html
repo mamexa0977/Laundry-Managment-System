@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage prices - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Bereket Tadesse (Owner) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../owner/dashboard.html">Dashboard</a> | <a href="../owner/order-requests.html">Order requests</a> | <a href="../owner/deliveries.html">Deliveries</a> | <strong>Prices</strong> | <a href="../owner/staff.html">Staff</a> | <a href="../owner/laundry-profile.html">Laundry profile</a> | <a href="../owner/reports.html">Reports</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Manage prices</h2>
+<section>
+<h3>Service price list</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<thead>
+<tr><th scope="col">Service</th><th scope="col">Price (ETB)</th><th scope="col">State</th><th scope="col">Actions</th></tr>
+</thead>
+<tbody>
+<tr><td>Shirt</td><td>40</td><td>active</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Deactivate</a></td></tr>
+<tr><td>Trouser</td><td>60</td><td>active</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Deactivate</a></td></tr>
+<tr><td>Dress</td><td>80</td><td>active</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Deactivate</a></td></tr>
+<tr><td>Suit</td><td>250</td><td>active</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Deactivate</a></td></tr>
+<tr><td>Blanket</td><td>150</td><td>active</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Deactivate</a></td></tr>
+<tr><td>Towel</td><td>50</td><td>inactive</td><td><a href="#service-form">Edit</a> | <a href="../owner/prices.html">Activate</a></td></tr>
+</tbody>
+</table>
+<p><small>An inactive service (Towel) stays in the list, but it cannot be chosen for new orders.</small></p>
+</section>
+<hr>
+<section>
+<h3 id="service-form">Add or edit a service</h3>
+<form action="../owner/prices.html" method="get">
+<p><label for="service_name">Service name</label><br>
+<input type="text" id="service_name" name="service_name" required></p>
+<p><label for="price">Price (ETB)</label><br>
+<input type="number" id="price" name="price" min="1" step="1" required></p>
+<p><label for="service_status">State</label><br>
+<select id="service_status" name="service_status">
+<option value="Active">Active</option>
+<option value="Inactive">Inactive</option>
+</select></p>
+<button type="submit">Save service</button>
+ 
+<button type="reset">Clear form</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Pickup and delivery fees</h3>
+<form action="../owner/prices.html" method="get">
+<p><label for="pickup_fee">Pickup fee (ETB)</label><br>
+<input type="number" id="pickup_fee" name="pickup_fee" min="0" value="50" required></p>
+<p><label for="delivery_fee">Delivery fee (ETB)</label><br>
+<input type="number" id="delivery_fee" name="delivery_fee" min="0" value="100" required></p>
+<p><small>Customers see these fees on your laundry page. The driver who does the trip earns the fee.</small></p>
+<button type="submit">Save fees</button>
+</form>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

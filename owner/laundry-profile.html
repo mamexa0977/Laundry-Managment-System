@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry profile - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Bereket Tadesse (Owner) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../owner/dashboard.html">Dashboard</a> | <a href="../owner/order-requests.html">Order requests</a> | <a href="../owner/deliveries.html">Deliveries</a> | <a href="../owner/prices.html">Prices</a> | <a href="../owner/staff.html">Staff</a> | <strong>Laundry profile</strong> | <a href="../owner/reports.html">Reports</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Laundry profile</h2>
+<p>This is what customers see in the laundry list. Admin approval state: <strong>approved</strong></p>
+<form action="../owner/dashboard.html" method="get">
+<fieldset>
+<legend>Laundry details</legend>
+<p><label for="laundry_name">Laundry name</label><br>
+<input type="text" id="laundry_name" name="laundry_name" value="Bereket Laundry" required></p>
+<p><label for="laundry_phone">Phone</label><br>
+<input type="tel" id="laundry_phone" name="laundry_phone" value="0911234567"></p>
+<p><label for="laundry_area">Area</label><br>
+<select id="laundry_area" name="laundry_area">
+<option value="Bole" selected>Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+</select></p>
+<p><label for="laundry_address">Street address</label><br>
+<textarea id="laundry_address" name="laundry_address" rows="2" cols="40"></textarea></p>
+<p><label for="open_time">Opening time</label><br>
+<input type="time" id="open_time" name="open_time" value="07:30"></p>
+<p><label for="close_time">Closing time</label><br>
+<input type="time" id="close_time" name="close_time" value="19:00"></p>
+<p><label for="description">Short description</label><br>
+<textarea id="description" name="description" rows="3" cols="40"></textarea></p>
+</fieldset>
+<fieldset>
+<legend>Delivery</legend>
+<p><input type="checkbox" id="offers_delivery" name="offers_delivery" value="on" checked> <label for="offers_delivery">We offer pickup and delivery</label></p>
+</fieldset>
+<button type="submit">Save profile</button>
+ 
+<a href="../owner/dashboard.html">Cancel</a>
+</form>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
