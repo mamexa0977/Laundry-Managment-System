@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place order - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Abebe Kebede (Customer)</p>
+  </header>
+
+  <nav>
+    <p><a href="../customer/laundries.html">Laundries</a> | <a href="../customer/my-orders.html">My orders</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Place an order</h2>
+<p>Laundry: <strong>Bereket Laundry</strong> (Bole)</p>
+<form action="../customer/order-confirmation.html" method="get">
+<section>
+<h3>1. Your clothes</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>Services of Bereket Laundry</caption>
+<thead>
+<tr><th scope="col">Service</th><th scope="col">Unit price</th><th scope="col">Quantity</th></tr>
+</thead>
+<tbody>
+<tr><td><label for="qty_shirt">Shirt</label></td><td>ETB 40</td><td><input type="number" id="qty_shirt" name="qty_shirt" min="0" value="0"></td></tr>
+<tr><td><label for="qty_trouser">Trouser</label></td><td>ETB 60</td><td><input type="number" id="qty_trouser" name="qty_trouser" min="0" value="0"></td></tr>
+<tr><td><label for="qty_dress">Dress</label></td><td>ETB 80</td><td><input type="number" id="qty_dress" name="qty_dress" min="0" value="0"></td></tr>
+<tr><td><label for="qty_suit">Suit</label></td><td>ETB 250</td><td><input type="number" id="qty_suit" name="qty_suit" min="0" value="0"></td></tr>
+<tr><td><label for="qty_blanket">Blanket</label></td><td>ETB 150</td><td><input type="number" id="qty_blanket" name="qty_blanket" min="0" value="0"></td></tr>
+</tbody>
+</table>
+<p><small>The total price is calculated by the system in a later phase. Example: 4 shirts + 1 blanket = ETB 310, plus the pickup and delivery fees you choose below.</small></p>
+</section>
+<hr>
+<section>
+<h3>2. How do the clothes reach the laundry?</h3>
+<p><input type="radio" id="in_dropoff" name="reach" value="dropoff" checked> <label for="in_dropoff">I will bring them to the laundry</label></p>
+<p><input type="radio" id="in_pickup" name="reach" value="pickup"> <label for="in_pickup">A driver picks them up from my address (pickup fee: ETB 50)</label></p>
+<p><label for="pickup_date">Pickup date</label><br>
+<input type="date" id="pickup_date" name="pickup_date"></p>
+<p><label for="pickup_time">Pickup time</label><br>
+<select id="pickup_time" name="pickup_time">
+<option value="Morning (8:00 - 12:00)">Morning (8:00 - 12:00)</option>
+<option value="Afternoon (12:00 - 17:00)">Afternoon (12:00 - 17:00)</option>
+</select></p>
+</section>
+<hr>
+<section>
+<h3>3. How do you get them back?</h3>
+<p><input type="radio" id="out_collect" name="back" value="collect" checked> <label for="out_collect">I will collect them at the laundry</label></p>
+<p><input type="radio" id="out_deliver" name="back" value="deliver"> <label for="out_deliver">Deliver to my address (delivery fee: ETB 100)</label></p>
+<p><label for="address">Address for pickup / delivery</label><br>
+<textarea id="address" name="address" rows="3" cols="40" placeholder="Bole Medhanialem, near Edna Mall, House 215"></textarea></p>
+<p><label for="phone">Phone number</label><br>
+<input type="tel" id="phone" name="phone" maxlength="10" pattern="09[0-9]{8}" value="0911000001" required></p>
+<p><label for="notes">Notes for the laundry (optional)</label><br>
+<textarea id="notes" name="notes" rows="2" cols="40"></textarea></p>
+</section>
+<hr>
+<button type="submit">Send order</button>
+ 
+<button type="reset">Clear form</button>
+ 
+<a href="../customer/laundry-detail.html">Cancel</a>
+</form>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

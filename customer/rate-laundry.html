@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rate laundry - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Abebe Kebede (Customer)</p>
+  </header>
+
+  <nav>
+    <p><a href="../customer/laundries.html">Laundries</a> | <a href="../customer/my-orders.html">My orders</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Rate the laundry</h2>
+<p>Order ORD-0007 at <strong>Sheba Clean</strong> was collected on 2026-11-12.</p>
+<section>
+<form action="../customer/my-orders.html" method="get">
+<p><label for="rating">Your rating</label><br>
+<select id="rating" name="rating">
+<option value="5">5 - Excellent</option>
+<option value="4">4 - Good</option>
+<option value="3">3 - OK</option>
+<option value="2">2 - Poor</option>
+<option value="1">1 - Bad</option>
+</select></p>
+<p><label for="comment">Your comment</label><br>
+<textarea id="comment" name="comment" rows="4" cols="40" placeholder="Tell other customers about the service"></textarea></p>
+<p></p>
+<button type="submit">Send rating</button>
+ 
+<a href="../customer/my-orders.html">Cancel</a>
+</form>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
