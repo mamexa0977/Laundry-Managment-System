@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register your laundry - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+  </header>
+
+  <nav>
+    <p><a href="index.html">Home</a> | <a href="login.html">Login</a> | <a href="register-customer.html">Register as customer</a> | <strong>Register your laundry</strong> | <a href="register-driver.html">Register as driver</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Register your laundry</h2>
+<p>Fill in your details. The admin checks every new laundry before it appears in the customer list.</p>
+<form action="login.html" method="get">
+<fieldset>
+<legend>Owner details</legend>
+<p><label for="owner_name">Owner full name</label><br>
+<input type="text" id="owner_name" name="owner_name" required></p>
+<p><label for="owner_phone">Owner phone number</label><br>
+<input type="tel" id="owner_phone" name="owner_phone" maxlength="10" pattern="09[0-9]{8}" placeholder="0911000001" required></p>
+<p><label for="owner_username">Username</label><br>
+<input type="text" id="owner_username" name="owner_username" required></p>
+<p><label for="owner_password">Password</label><br>
+<input type="password" id="owner_password" name="owner_password" required></p>
+</fieldset>
+<fieldset>
+<legend>Laundry details</legend>
+<p><label for="laundry_name">Laundry name</label><br>
+<input type="text" id="laundry_name" name="laundry_name" required></p>
+<p><label for="laundry_area">Area</label><br>
+<select id="laundry_area" name="laundry_area">
+<option value="Bole">Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+<option value="Arat Kilo">Arat Kilo</option>
+<option value="Kazanchis">Kazanchis</option>
+<option value="Sar Bet">Sar Bet</option>
+</select></p>
+<p><label for="laundry_address">Street address</label><br>
+<textarea id="laundry_address" name="laundry_address" rows="2" cols="40" required></textarea></p>
+<p><label for="open_time">Opening time</label><br>
+<input type="time" id="open_time" name="open_time" value="08:00"></p>
+<p><label for="close_time">Closing time</label><br>
+<input type="time" id="close_time" name="close_time" value="18:00"></p>
+<p><label for="description">Short description</label><br>
+<textarea id="description" name="description" rows="3" cols="40"></textarea></p>
+</fieldset>
+<fieldset>
+<legend>Delivery</legend>
+<p><input type="checkbox" id="offers_delivery" name="offers_delivery" value="on"> <label for="offers_delivery">My laundry offers pickup and delivery (Laundry Hub drivers do the trips)</label></p>
+<p><label for="pickup_fee">Pickup fee (ETB)</label><br>
+<input type="number" id="pickup_fee" name="pickup_fee" min="0" value="50"></p>
+<p><label for="delivery_fee">Delivery fee (ETB)</label><br>
+<input type="number" id="delivery_fee" name="delivery_fee" min="0" value="100"></p>
+<p><small>The driver who does the trip earns the fee.</small></p>
+</fieldset>
+<button type="submit">Send for approval</button>
+ 
+<button type="reset">Clear form</button>
+ 
+<a href="index.html">Cancel</a>
+</form>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

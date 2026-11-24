@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as driver - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+  </header>
+
+  <nav>
+    <p><a href="index.html">Home</a> | <a href="login.html">Login</a> | <a href="register-customer.html">Register as customer</a> | <a href="register-laundry.html">Register your laundry</a> | <strong>Register as driver</strong></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Register as driver</h2>
+<p>Drivers work for the whole platform. After the admin approves your account, you can take pickup and delivery jobs from any laundry.</p>
+<form action="login.html" method="get">
+<fieldset>
+<legend>Personal details</legend>
+<p><label for="driver_name">Full name</label><br>
+<input type="text" id="driver_name" name="driver_name" required></p>
+<p><label for="driver_phone">Phone number</label><br>
+<input type="tel" id="driver_phone" name="driver_phone" maxlength="10" pattern="09[0-9]{8}" placeholder="0912121212" required></p>
+<p><label for="id_number">National ID or Kebele ID number</label><br>
+<input type="text" id="id_number" name="id_number" required></p>
+<p><label for="driver_area">Main area where you work</label><br>
+<select id="driver_area" name="driver_area">
+<option value="Bole">Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+<option value="Arat Kilo">Arat Kilo</option>
+<option value="Kazanchis">Kazanchis</option>
+<option value="Sar Bet">Sar Bet</option>
+</select></p>
+</fieldset>
+<fieldset>
+<legend>Vehicle</legend>
+<p><label for="vehicle">Vehicle</label><br>
+<select id="vehicle" name="vehicle">
+<option value="Motorbike">Motorbike</option>
+<option value="Bicycle">Bicycle</option>
+<option value="Car">Car</option>
+<option value="On foot">On foot</option>
+</select></p>
+<p><label for="plate">Plate number (if any)</label><br>
+<input type="text" id="plate" name="plate"></p>
+</fieldset>
+<fieldset>
+<legend>Account</legend>
+<p><label for="driver_username">Username</label><br>
+<input type="text" id="driver_username" name="driver_username" required></p>
+<p><label for="driver_password">Password</label><br>
+<input type="password" id="driver_password" name="driver_password" required></p>
+</fieldset>
+<p><input type="checkbox" id="agree" name="agree" value="on"> <label for="agree">I will keep the customers' clothes safe and hand over all money I collect to the laundry</label></p>
+<button type="submit">Send for approval</button>
+ 
+<button type="reset">Clear form</button>
+ 
+<a href="index.html">Cancel</a>
+</form>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>

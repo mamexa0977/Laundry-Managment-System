@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as customer - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+  </header>
+
+  <nav>
+    <p><a href="index.html">Home</a> | <a href="login.html">Login</a> | <strong>Register as customer</strong> | <a href="register-laundry.html">Register your laundry</a> | <a href="register-driver.html">Register as driver</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Register as customer</h2>
+<section>
+<form action="login.html" method="get">
+<p><label for="full_name">Full name</label><br>
+<input type="text" id="full_name" name="full_name" required></p>
+<p><label for="phone">Phone number</label><br>
+<input type="tel" id="phone" name="phone" maxlength="10" pattern="09[0-9]{8}" title="10 digits starting with 09" placeholder="0911000001" required></p>
+<p><label for="area">Area</label><br>
+<select id="area" name="area">
+<option value="Bole">Bole</option>
+<option value="Piassa">Piassa</option>
+<option value="CMC">CMC</option>
+<option value="Megenagna">Megenagna</option>
+<option value="Arat Kilo">Arat Kilo</option>
+<option value="Kazanchis">Kazanchis</option>
+<option value="Sar Bet">Sar Bet</option>
+</select></p>
+<p><label for="address">Home address (for pickup and delivery)</label><br>
+<textarea id="address" name="address" rows="3" cols="40"></textarea></p>
+<p><label for="username">Username</label><br>
+<input type="text" id="username" name="username" required></p>
+<p><label for="password">Password</label><br>
+<input type="password" id="password" name="password" required></p>
+<p></p>
+<button type="submit">Create account</button>
+ 
+<button type="reset">Clear form</button>
+ 
+<a href="index.html">Cancel</a>
+</form>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
