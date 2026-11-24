@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search order - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Hirut Alemayehu (Shopkeeper) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../shop/dashboard.html">Dashboard</a> | <a href="../shop/new-order.html">New order</a> | <strong>Search order</strong> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Search order</h2>
+<section>
+<h3>Find an order</h3>
+<form action="../shop/search-order.html" method="get">
+<p><label for="search_value">Order number or customer phone number</label><br>
+<input type="text" id="search_value" name="search_value" placeholder="ORD-0001 or 0911000001" required></p>
+<p></p>
+<button type="submit">Search</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Search result</h3>
+<p><small>Showing the sample result for: ORD-0001</small></p>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Order number</th><td>ORD-0001</td></tr>
+<tr><th scope="row">Customer</th><td>Abebe Kebede</td></tr>
+<tr><th scope="row">Phone</th><td>0911000001</td></tr>
+<tr><th scope="row">Clothes</th><td>3 Shirt, 2 Trouser</td></tr>
+<tr><th scope="row">Total</th><td>ETB 240</td></tr>
+<tr><th scope="row">Status</th><td><strong>received</strong></td></tr>
+<tr><th scope="row">Estimated ready date</th><td>2026-11-20</td></tr>
+<tr><th scope="row">Payment state</th><td><strong>unpaid</strong></td></tr>
+</tbody>
+</table>
+[ <a href="../shop/update-status.html">Update status</a> ]
+[ <a href="../shop/handover.html">Hand over order</a> ]
+<p><small>Hand over is only possible when the status is Ready for collection.</small></p>
+</section>
+<hr>
+<section>
+<h3>If no order is found</h3>
+<p>Order not found. Check the order number or phone number and try again.</p>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
