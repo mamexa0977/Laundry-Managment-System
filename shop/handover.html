@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hand over order - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Hirut Alemayehu (Shopkeeper) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../shop/dashboard.html">Dashboard</a> | <a href="../shop/new-order.html">New order</a> | <a href="../shop/search-order.html">Search order</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Hand over order and record payment</h2>
+<section>
+<h3>Order</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Order number</th><td>ORD-0003</td></tr>
+<tr><th scope="row">Customer</th><td>Dawit Alemu</td></tr>
+<tr><th scope="row">Phone</th><td>0933000003</td></tr>
+<tr><th scope="row">Clothes</th><td>5 Shirt</td></tr>
+<tr><th scope="row">Status</th><td><strong>ready for collection</strong></td></tr>
+<tr><th scope="row">Estimated ready date</th><td>2026-11-18</td></tr>
+</tbody>
+</table>
+<p>Check: the status is ready for collection, so this order can be handed over.</p>
+</section>
+<hr>
+<section>
+<h3>Payment summary</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<tbody>
+<tr><th scope="row">Total</th><td>ETB 200</td></tr>
+<tr><th scope="row">Already paid</th><td>ETB 0</td></tr>
+<tr><th scope="row">Balance</th><td>ETB 200</td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+<form action="../shop/dashboard.html" method="get">
+<section>
+<h3>Payment</h3>
+<p><label for="payment_method">Payment method</label><br>
+<select id="payment_method" name="payment_method" required>
+<option value="">-- select --</option>
+<option value="Cash">Cash</option>
+<option value="Telebirr">Telebirr</option>
+<option value="Bank transfer">Bank transfer</option>
+</select></p>
+<p><label for="amount_received">Amount received (ETB)</label><br>
+<input type="number" id="amount_received" name="amount_received" min="0" required></p>
+<p><small>If the customer pays less than the total, the system records a partial payment and shows the balance.</small></p>
+</section>
+<hr>
+<section>
+<h3>Handover</h3>
+<p><input type="radio" id="handover_collect" name="handover_type" value="collect" checked> <label for="handover_collect">Customer collects at the shop</label></p>
+<p><input type="radio" id="handover_deliver" name="handover_type" value="deliver"> <label for="handover_deliver">Deliver to the customer's address (delivery fee: ETB 100). A delivery job is posted to the driver job board</label></p>
+<p><label for="delivery_address">Delivery address</label><br>
+<textarea id="delivery_address" name="delivery_address" rows="4" cols="40"></textarea></p>
+<p><small>For delivery, the job goes to the driver job board. The driver who accepts it collects the money and records it on delivery.</small></p>
+<p><small>Wrong order or lost receipt? Find the order by phone number.</small></p>
+<a href="../shop/search-order.html">Find another order</a>
+</section>
+<hr>
+<button type="submit">Record payment and hand over</button>
+ 
+<a href="../shop/dashboard.html">Cancel</a>
+</form>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
