@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+  </header>
+
+  <nav>
+    <p><a href="index.html">Home</a> | <strong>Login</strong> | <a href="register-customer.html">Register as customer</a> | <a href="register-laundry.html">Register your laundry</a> | <a href="register-driver.html">Register as driver</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Login</h2>
+<p>Choose your role and enter your username and password.</p>
+<p><small>This is the HTML phase: type any username and password. The form simply opens the dashboard of that role.</small></p>
+<section>
+<h3>Customer login</h3>
+<form action="customer/laundries.html" method="get">
+<p><label for="customer_username">Username</label><br>
+<input type="text" id="customer_username" name="customer_username" required></p>
+<p><label for="customer_password">Password</label><br>
+<input type="password" id="customer_password" name="customer_password" required></p>
+<p></p>
+<button type="submit">Login as customer</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Shopkeeper login</h3>
+<form action="shop/dashboard.html" method="get">
+<p><label for="shop_username">Username</label><br>
+<input type="text" id="shop_username" name="shop_username" required></p>
+<p><label for="shop_password">Password</label><br>
+<input type="password" id="shop_password" name="shop_password" required></p>
+<p></p>
+<button type="submit">Login as shopkeeper</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Driver login</h3>
+<form action="driver/dashboard.html" method="get">
+<p><label for="driver_username">Username</label><br>
+<input type="text" id="driver_username" name="driver_username" required></p>
+<p><label for="driver_password">Password</label><br>
+<input type="password" id="driver_password" name="driver_password" required></p>
+<p></p>
+<button type="submit">Login as driver</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Owner / manager login</h3>
+<form action="owner/dashboard.html" method="get">
+<p><label for="owner_username">Username</label><br>
+<input type="text" id="owner_username" name="owner_username" required></p>
+<p><label for="owner_password">Password</label><br>
+<input type="password" id="owner_password" name="owner_password" required></p>
+<p></p>
+<button type="submit">Login as owner</button>
+</form>
+</section>
+<hr>
+<section>
+<h3>Admin login</h3>
+<form action="admin/dashboard.html" method="get">
+<p><label for="admin_username">Username</label><br>
+<input type="text" id="admin_username" name="admin_username" required></p>
+<p><label for="admin_password">Password</label><br>
+<input type="password" id="admin_password" name="admin_password" required></p>
+<p></p>
+<button type="submit">Login as admin</button>
+</form>
+</section>
+<hr>
+<p>No account yet? <a href="register-customer.html">Register as customer</a> or <a href="register-laundry.html">register your laundry</a>, or <a href="register-driver.html">register as a driver</a>.</p>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
