@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update order status - Laundry Hub</title>
+</head>
+<body>
+
+  <header>
+    <h1>Laundry Hub</h1>
+    <p>Laundry management and delivery system</p>
+    <p>Signed in as: Hirut Alemayehu (Shopkeeper) - Bereket Laundry</p>
+  </header>
+
+  <nav>
+    <p><a href="../shop/dashboard.html">Dashboard</a> | <a href="../shop/new-order.html">New order</a> | <a href="../shop/search-order.html">Search order</a> | <a href="../login.html">Logout</a></p>
+  </nav>
+  <hr>
+
+  <main>
+<h2>Update order status</h2>
+<section>
+<h3>Order</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>Selected order</caption>
+<tbody>
+<tr><th scope="row">Order number</th><td>ORD-0002</td></tr>
+<tr><th scope="row">Customer</th><td>Sara Tesfaye</td></tr>
+<tr><th scope="row">Phone</th><td>0922000002</td></tr>
+<tr><th scope="row">Clothes</th><td>1 Blanket, 2 Dress</td></tr>
+<tr><th scope="row">Current status</th><td><strong>washing</strong></td></tr>
+<tr><th scope="row">Estimated ready date</th><td>2026-11-19</td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+<form action="../shop/dashboard.html" method="get">
+<fieldset>
+<legend>Change status</legend>
+<p><label for="new_status">New status</label><br>
+<select id="new_status" name="new_status" required>
+<option value="Received">Received</option>
+<option value="Washing" selected>Washing</option>
+<option value="Finished">Finished</option>
+<option value="Ready for collection">Ready for collection</option>
+</select></p>
+</fieldset>
+<fieldset>
+<legend>Delay (only if there is a delay)</legend>
+<p><label for="delay_reason">Reason for delay</label><br>
+<select id="delay_reason" name="delay_reason">
+<option value="">-- no delay --</option>
+<option value="No electricity">No electricity</option>
+<option value="Water problem">Water problem</option>
+<option value="Machine problem">Machine problem</option>
+<option value="Other">Other</option>
+</select></p>
+<p><label for="new_estimated_date">New estimated ready date</label><br>
+<input type="date" id="new_estimated_date" name="new_estimated_date"></p>
+</fieldset>
+<button type="submit">Save status</button>
+ 
+<a href="../shop/dashboard.html">Cancel</a>
+</form>
+<section>
+<h3>Status history</h3>
+<table border="1" cellpadding="6" cellspacing="0">
+<caption>Status history of ORD-0002</caption>
+<thead>
+<tr><th scope="col">Status</th><th scope="col">Date and time</th></tr>
+</thead>
+<tbody>
+<tr><td>Received</td><td>2026-11-16 09:10</td></tr>
+<tr><td>Washing</td><td>2026-11-16 10:30</td></tr>
+</tbody>
+</table>
+</section>
+<hr>
+  </main>
+
+  <footer>
+    <p>Laundry Hub - HTML project</p>
+  </footer>
+
+</body>
+</html>
